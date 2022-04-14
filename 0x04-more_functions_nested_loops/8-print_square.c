@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- -print_square - prints hashtags to make a square
+ *print_square - prints hashtags to make a square
  *@size: limit
  *Return: void
  */
