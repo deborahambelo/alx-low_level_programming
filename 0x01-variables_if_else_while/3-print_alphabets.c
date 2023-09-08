@@ -1,17 +1,20 @@
-#include <stdlib.h>
-#include <time.h>
 #include <stdio.h>
 /**
- * main - main block
- * Description: Print statements based on the last digit of the random number.
- * Return: 0
+ * main - Entry point
+ * Return: Always 0 on success
  */
 int main(void)
 {
 	int i;
 
 	for (i = 'a'; i <= 'z'; i++)
+	{
 		putchar(i);
+	}
+	for (i = 'A'; i <= 'Z'; i++)
+	{
+		putchar(i);
+	}
+	putchar('\n');
 	return (0);
-
 }
