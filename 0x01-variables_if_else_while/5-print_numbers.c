@@ -1,19 +1,18 @@
 #include <stdio.h>
-
 /**
  *main - entry point
  *
- *Description: Print numbers 0 to 9 on one line
+ *Description: Print lowercase alphabet excluding e and q
  *Return: 0
  */
 int main(void)
 {
-char i;
+	int i;
 
-for (i = '0'; i <= '9'; ++i)
-putchar(i);
-
-putchar('\n');
-
-return (0);
+	for (i = 0; i < 10; i++)
+	{
+		printf("%d", i);
+	}
+	putchar('\n');
+	return (0);
 }
