@@ -4,14 +4,14 @@
  * @s: a string
  * Return: length of a string
  */
-int _strlen(char *s)
+int _strlen(char *s) 
 {
-	int len = 0;
+	int count = 0;
 
-	for (len = 0; s[len] != '\0'; len++)
+	while (*s != '\0')
 	{
-		len++;
+		count++;
+		s++;
 	}
-	return (len);
+	return (count);
 }
-
