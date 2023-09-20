@@ -6,35 +6,14 @@
  * Return: Always 0.
  */
 int _strcmp(char *s1, char *s2)
+
 {
-    int i;
+	int a;
 
-    for (i = 0; s1[i] != '\0'; i++)
-    {
-        int asc1 = (int)(s1[i]);
-        int asc2 = (int)(s2[i]);
-
-        if (asc1 > asc2)
-        {
-            return 15;
-        }
-        else if (asc1 < asc2)
-        {
-            return -15;
-        }
-    }
-
-   
-    if (s1[i] == '\0' && s2[i] == '\0')
-    {
-        return 0;
-    }
-    else if (s1[i] == '\0')
-    {
-        return -15; 
-    }
-    else
-    {
-        return 15; 
-    }
+	for (a = 0; s1[a] != '\0' && s2[a] != '\0'; a++)
+	{
+		if (s1[a] != s2[a])
+		return (s1[a] - s2[a]);
+	}
+	return (0);
 }
