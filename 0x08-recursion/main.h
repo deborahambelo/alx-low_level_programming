@@ -12,6 +12,9 @@ int _sqrt(int n, int i);
 int is_prime_number(int n);
 int divisors(int n, int m);
 int tmp_prime(int n, int i);
+int _strlen_recursion(char *s);
+int p1(char *s, int l);
+int is_palindrome(char *s);
 
 
 #endif /* _MAIN_H_ */
