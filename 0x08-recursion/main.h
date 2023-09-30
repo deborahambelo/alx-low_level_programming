@@ -15,6 +15,7 @@ int tmp_prime(int n, int i);
 int _strlen_recursion(char *s);
 int p1(char *s, int l);
 int is_palindrome(char *s);
+int wildcmp(char *s1, char *s2);
 
 
 #endif /* _MAIN_H_ */
