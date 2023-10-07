@@ -6,8 +6,11 @@
  *
  * Return: The length of the string.
  */
-int str_length(char *s) {
-    int length = 0;
+int str_length(char *s)
+{
+	int length;
+
+	length = 0;
     while (*s != '\0') {
         length++;
         s++;
@@ -38,6 +41,10 @@ char *str_copy(char *dest, char *src) {
  * Return: A pointer to the concatenated string (a new allocation).
  */
 char *str_concat(char *s1, char *s2) {
+	int total_length;
+        char *result;
+        char *start;
+
     if (s1 == NULL) {
         s1 = "";
     }
@@ -45,15 +52,15 @@ char *str_concat(char *s1, char *s2) {
         s2 = "";
     }
 
-    int total_length = str_length(s1) + str_length(s2) + 1;
+    total_length = str_length(s1) + str_length(s2) + 1;
 
-    char *result = malloc(sizeof(char) * total_length);
+    result = malloc(sizeof(char) * total_length);
 
     if (result == NULL) {
         return NULL;
     }
 
-    char *start = result;
+    start = result;
     result = str_copy(result, s1);
     str_copy(result, s2);
 
