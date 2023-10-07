@@ -1,1 +1,1 @@
-This repositroy is used for alx c-programming projects.
+0x09-static_libraries
