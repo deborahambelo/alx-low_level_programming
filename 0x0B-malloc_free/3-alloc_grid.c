@@ -17,7 +17,7 @@ int **alloc_grid(int width, int height){
   return ipp;
 }
 
-void freegrid(int **ipp, int width, int height)
+void freegrid(int **ipp, int width)
 {
       int i;
       for(i=0; i < width; i++){
