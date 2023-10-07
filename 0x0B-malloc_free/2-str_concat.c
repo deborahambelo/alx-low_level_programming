@@ -2,22 +2,21 @@
 #include <stdlib.h>
 
 char *str_concat(char *s1, char *s2) {
-    if (s1 == NULL) {
+    char *s;
+    int count;
+    char *s1org;
+    char *org;
+    char *start;
+
+    s1org = s1;
+    org = s2;
+    count = 0;
+if (s1 == NULL) {
         s1 = "";
     }
     if (s2 == NULL) {
         s2 = "";
     }
-
-    unsigned int i;
-    char *s;
-    int count;
-    char *s1org;
-    s1org = s1;
-    char *org = s2;
-    char *start;
-    count = 0;
-
     while (*s1 != '\0') {
         count++;
         s1++;
@@ -48,7 +47,7 @@ start = s;
         s2++;
     }
 
-    *s = '\0'; // Set the null-terminator
+    *s = '\0';
 
     return start;
 }
