@@ -4,7 +4,7 @@
 /**
  * insert_nodeint_at_index - inserts a new node
  * @head: head of a list.
- * @idx: index of the list 
+ * @idx: index of the list
  * @n: integer element.
  * Return: the address of the new node
  */
